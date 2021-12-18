@@ -1,4 +1,10 @@
 const express = require('express');
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+let db;
+
 const path = require('path');
 
 const PORT = 3000;
@@ -12,4 +18,16 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server listening at localhost:${3000}!`);
+    readline.question(`Choose your db: (mongo or mysql)\n>>>>>`, choice=>{
+      if(choice==='mongo') {
+        console.log('Your db is Mongo');
+        db = require('../database/mongo');
+      } else if(choice === 'mysql') {
+        console.log('Your db is mysql');
+        db = require('../database/mysql');
+      } else {
+        console.log('Stope node, restart and try again, valid options are mysql and mongo')
+      }
+    })
+
 });

@@ -15,7 +15,7 @@ connection.connect((err) => {
   }
 });
 
-// Your Database Queries Here!!
+module.exports = connection;
 
 
 
