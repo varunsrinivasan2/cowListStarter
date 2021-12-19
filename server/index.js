@@ -26,7 +26,7 @@ app.listen(PORT, () => {
         console.log('Your db is mysql');
         db = require('../database/mysql');
       } else {
-        console.log('Stope node, restart and try again, valid options are mysql and mongo')
+        console.log('Stop node, restart and try again, valid options are mysql and mongo')
       }
     })
 
