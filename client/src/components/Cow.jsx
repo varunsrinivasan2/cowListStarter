@@ -4,10 +4,6 @@ import DisplayCow from './DisplayCow.jsx';
 class Cow extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-
-    }
   }
 
   render() {
