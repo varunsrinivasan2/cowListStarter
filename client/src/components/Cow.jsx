@@ -12,7 +12,6 @@ class Cow extends React.Component {
     let display = this.props.display;
     return (
       <div className="each-cow">
-        {/* <DisplayCow cow={this.props.cow}/> */}
         <li onClick={() => display(name, desc)}>{name}</li>
       </div>
     )
