@@ -8,22 +8,7 @@ class Cow extends React.Component {
     this.state = {
 
     }
-
-    // this.clickedCow = this.clickedCow.bind(this);
   }
-
-  // clickedCow(name, desc) {
-  //   // console.log('clicked', this.props);
-  //   // let clickedName = this.state.clickedName;
-  //   // let clickedDesc = this.state.clickedDesc;
-  //   let clickCow = {
-  //     cowName: name,
-  //     cowDescription: desc
-  //   };
-  //   console.log('clickcow', clickCow)
-  //   // return clickedCow;
-  //   this.props.display(clickCow);
-  // }
 
   render() {
     let name = this.props.cow.cowName;
